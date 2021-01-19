@@ -2,7 +2,7 @@
 //  LGLogger.h
 //  LGLogger
 //
-//  Created by Ленар Гилязов on 19.01.2021.
+//  Created by Lenar Gilyazov on 19.01.2021.
 //
 
 #import <Foundation/Foundation.h>

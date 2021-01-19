@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3196BA25B747550011DF74 /* LGLogger.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AE3196B725B747550011DF74 /* LGLogger.podspec */; };
+		AE3196BB25B747550011DF74 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AE3196B825B747550011DF74 /* LICENSE */; };
+		AE3196BC25B747550011DF74 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE3196B925B747550011DF74 /* README.md */; };
 		AE6BCEBA25B732150091D95E /* LGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6BCEB025B732150091D95E /* LGLogger.framework */; };
 		AE6BCEBF25B732150091D95E /* LGLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BCEBE25B732150091D95E /* LGLoggerTests.swift */; };
 		AE6BCEC125B732150091D95E /* LGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6BCEB325B732150091D95E /* LGLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE6BCECF25B7327F0091D95E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BCECE25B7327F0091D95E /* Logger.swift */; };
+		AE6BCED325B7341B0091D95E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BCED225B7341B0091D95E /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE3196B725B747550011DF74 /* LGLogger.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LGLogger.podspec; sourceTree = "<group>"; };
+		AE3196B825B747550011DF74 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AE3196B925B747550011DF74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AE6BCEB025B732150091D95E /* LGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6BCEB325B732150091D95E /* LGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLogger.h; sourceTree = "<group>"; };
 		AE6BCEB425B732150091D95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6BCEB925B732150091D95E /* LGLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6BCEBE25B732150091D95E /* LGLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGLoggerTests.swift; sourceTree = "<group>"; };
 		AE6BCEC025B732150091D95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6BCECE25B7327F0091D95E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		AE6BCED225B7341B0091D95E /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE3196B625B747330011DF74 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				AE3196B725B747550011DF74 /* LGLogger.podspec */,
+				AE3196B825B747550011DF74 /* LICENSE */,
+				AE3196B925B747550011DF74 /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		AE6BCEA625B732150091D95E = {
 			isa = PBXGroup;
 			children = (
+				AE3196B625B747330011DF74 /* Podspec Metadata */,
 				AE6BCEB225B732150091D95E /* LGLogger */,
 				AE6BCEBD25B732150091D95E /* LGLoggerTests */,
 				AE6BCEB125B732150091D95E /* Products */,
@@ -73,6 +94,8 @@
 			children = (
 				AE6BCEB325B732150091D95E /* LGLogger.h */,
 				AE6BCEB425B732150091D95E /* Info.plist */,
+				AE6BCECE25B7327F0091D95E /* Logger.swift */,
+				AE6BCED225B7341B0091D95E /* Date+Ext.swift */,
 			);
 			path = LGLogger;
 			sourceTree = "<group>";
@@ -147,6 +170,7 @@
 				TargetAttributes = {
 					AE6BCEAF25B732150091D95E = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					AE6BCEB825B732150091D95E = {
 						CreatedOnToolsVersion = 12.3;
@@ -177,6 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3196BC25B747550011DF74 /* README.md in Resources */,
+				AE3196BB25B747550011DF74 /* LICENSE in Resources */,
+				AE3196BA25B747550011DF74 /* LGLogger.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6BCECF25B7327F0091D95E /* Logger.swift in Sources */,
+				AE6BCED325B7341B0091D95E /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +370,7 @@
 		AE6BCEC525B732150091D95E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 949WBM2944;
@@ -357,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lenar.gilyazov.LGLogger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +396,7 @@
 		AE6BCEC625B732150091D95E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 949WBM2944;
@@ -389,6 +421,7 @@
 		AE6BCEC825B732150091D95E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 949WBM2944;
 				INFOPLIST_FILE = LGLoggerTests/Info.plist;
@@ -407,6 +440,7 @@
 		AE6BCEC925B732150091D95E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 949WBM2944;
 				INFOPLIST_FILE = LGLoggerTests/Info.plist;
