@@ -18,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AE3196D425B750D70011DF74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3196C625B750D60011DF74 /* MKLogger-Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE31969D25B746C10011DF74;
+			remoteInfo = "MKLogger-Example";
+		};
 		AE6BCEBB25B732150091D95E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE6BCEA725B732150091D95E /* Project object */;
@@ -31,6 +38,7 @@
 		AE3196B725B747550011DF74 /* LGLogger.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LGLogger.podspec; sourceTree = "<group>"; };
 		AE3196B825B747550011DF74 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AE3196B925B747550011DF74 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE3196C625B750D60011DF74 /* MKLogger-Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "MKLogger-Example.xcodeproj"; sourceTree = "<group>"; };
 		AE6BCEB025B732150091D95E /* LGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6BCEB325B732150091D95E /* LGLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGLogger.h; sourceTree = "<group>"; };
 		AE6BCEB425B732150091D95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,9 +78,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		AE3196C525B750D60011DF74 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AE3196C625B750D60011DF74 /* MKLogger-Example.xcodeproj */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		AE3196C725B750D60011DF74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE3196D525B750D70011DF74 /* MKLogger-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AE6BCEA625B732150091D95E = {
 			isa = PBXGroup;
 			children = (
+				AE3196C525B750D60011DF74 /* Example */,
 				AE3196B625B747330011DF74 /* Podspec Metadata */,
 				AE6BCEB225B732150091D95E /* LGLogger */,
 				AE6BCEBD25B732150091D95E /* LGLoggerTests */,
@@ -188,6 +213,12 @@
 			mainGroup = AE6BCEA625B732150091D95E;
 			productRefGroup = AE6BCEB125B732150091D95E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE3196C725B750D60011DF74 /* Products */;
+					ProjectRef = AE3196C625B750D60011DF74 /* MKLogger-Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE6BCEAF25B732150091D95E /* LGLogger */,
@@ -195,6 +226,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE3196D525B750D70011DF74 /* MKLogger-Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "MKLogger-Example.app";
+			remoteRef = AE3196D425B750D70011DF74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE6BCEAE25B732150091D95E /* Resources */ = {
